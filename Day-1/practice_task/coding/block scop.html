@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+  //  let name;
+//       function nameDeclaration() {
+//           let name = "haseeb-1";
+//         console.log(name);
+//        }
+// //   let name = farooq;
+//       nameDeclaration();
+//       console.log("name:" + name);
+// arrow function 
+//exampel -1
+// const retobj = (uname ,age) => ({uname: uname , age : age}) // without () this this funtion wont work 
+// console.log(retobj("alex", 30));
+
+// Exampel -2
+// const retobj = (uname , age) => {
+//   return {uname : uname , age : age};
+// }
+// console.log(retobj("alex", 30));
+
+// function xyz (){
+//   console.log( "xyz" ,this);
+// }
+// console.log("Here" ,this);
+// xyz();
+
+// const xyz = (){
+//   console.log( "xyz" ,this); // arraw function k appna koi This ny hotha hy 
+// }
+// --> Consturctor xxx // we cant make consturctor boz of this 
+// --> arguments xxxx  // arguments variables arrow function mai ny hotha hy 
+// --> new.target xx // arrow mai ny hotha 
+
+// we cant do this all things in arrow function and this is only disadvantage of arrow function !!
+
+// and advantages are more like sintax are very short and we can write a single line code insted of multipels lines!
+
+// console.log("Here" ,this);
+// xyz();
+
+// we can use in  expression Bodies 
+
+// let arr = [1,2,3,4];
+//  const arrmap = arr.map(function(element){
+//   return element * 2;
+// })
+// console.log(arrmap);
+
+// let arr = [1,2,3,4];
+// const arrmap = arr.map(element =>element * 2) 
+// console.log(arrmap);
+
+// What  LAxical scope ?
+//Lexical scope in JavaScript refers to the way variables are defined in the code and how they are accessible within nested functions.
+
+//Jaise hi hum JavaScript me koi function likhte hain, woh ek naya scope banata hai. Agar hum ek function ke andar aur ek function likhte hain, toh inner function ko access hota hai outer function ke variables ka, lekin outer function ko inner function ke variables ka access nahi hota.
+
+//Iss tarah se, variables ka access hierarchy ke according hota hai, jise lexical scope kehte hain. Jis function ke andar variable define hota hai, usi function ke scope me woh variable accessible hota hai.
+// var userName;
+
+
+console.log(userName);
+  let userName = "haseeb";
+   
+    // let data ={
+    //   list:'friend',
+    //   names: ['haseeb', 'arshad', 'farooq'],
+    //   getFriends: function()
+    //   {
+    //  //   console.warn(this.name)
+    //     let that = this.list;
+    //     this.names.map(function(item){
+    //       console.warn(that,item)
+    //     })
+    //   }
+    // }
+    // data.getFriends()
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // rest operator
+       // ex.1
+          // function sum (...args){
+          //   console.log(args);
+          // }
+          // sum(2,3,4,5,6,67);
+      // ex.2
+          // function sum (...args){
+          //  let result = 0;
+          //  for(let i=0; i<args.length ; i++){
+          //  result += args[i];
+          // }
+          // console.log(result);
+          // }
+          // sum(2,3,4,5,6);
+
+      // Defaul parameter
+      // function talk(msg){
+      //     console.log(msg);
+      //   }
+      //  // talk("Hello"); // it will print Hello
+      //   talk(); // here undinefed
+
+      //   function talk(msg = "Hii"){ // this hii works as default paramentere if we dont pass dont any value or dont call it !
+      //     console.log(msg);
+      //   }
+      //  // talk("Hello"); // it will print Hello
+      //   talk(); // default value will take from 33 line msg Hii will print in console without passing or calling !
+
+      // SPREAD OP
+
+            // let array1 = [1,2,3];
+            //                                   // here we are doing spread op from array1 in array2
+            // let array2 = [5,4,6, ...array1];   // with this ... dots we can asses of it
+            // // any where we can place it middle // first any whare !
+
+            // let array3 = [...array1, ...array2];
+
+            // console.log(array3);
+
+
+            function printArray(arr){
+              arr.map((item,index)=>
+              console.log(typeof item));
+              // console.log(`${index +1}:${item}`));
+            }
+              printArray(["i", "am", "Array"])
+
+
+            // printArray(['I', "am", "Array" ,"haseeb"])
+            // function printArray (...args)
+            // for(let i=0; i<args.length ; i++){
+            //   result += args[i];{
+            //   }
+            //   console.log(result);
+            // }
+            // sum();
+
+
+            // let a ,b ,rest;
+            // [a,b] = [ 'I','am', 'Array', 'haseeb'];
+            // console.log(a + b);
+            // console.log(b);
+            // [a,b, ...rest] = ['I','am', 'Array', 'haseeb'];
+            // console.log(rest);
+
+
+
+      //   function printArray(arr) {
+      //   arr.forEach((item, index) => {
+      //    console.log(⁠`${index + 1}: ${item}`⁠};
+      //   });
+      // }
+      // printArray(["i", "am", "Array"]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Checkboxradio - Default functionality</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("input").checkboxradio();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="widget">
+      <h1>Checkbox and radio button widgets</h1>
+
+      <h2>Radio Group</h2>
+      <fieldset>
+        <legend>Select a Location:</legend>
+        <label for="radio-1">New York</label>
+        <input type="radio" name="radio-1" id="radio-1" />
+        <label for="radio-2">Paris</label>
+        <input type="radio" name="radio-1" id="radio-2" />
+        <label for="radio-3">London</label>
+        <input type="radio" name="radio-1" id="radio-3" />
+      </fieldset>
+
+      <h2>Checkbox</h2>
+      <fieldset>
+        <legend>Hotel Ratings:</legend>
+        <label for="checkbox-1">2 Star</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+        <label for="checkbox-2">3 Star</label>
+        <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+        <label for="checkbox-3">4 Star</label>
+        <input type="checkbox" name="checkbox-3" id="checkbox-3" />
+        <label for="checkbox-4">5 Star</label>
+        <input type="checkbox" name="checkbox-4" id="checkbox-4" />
+      </fieldset>
+
+      <h2>Checkbox nested in label</h2>
+      <fieldset>
+        <legend>Bed Type:</legend>
+        <label for="checkbox-nested-1"
+          >2 Double
+          <input
+            type="checkbox"
+            name="checkbox-nested-1"
+            id="checkbox-nested-1"
+          />
+        </label>
+        <label for="checkbox-nested-2"
+          >2 Queen
+          <input
+            type="checkbox"
+            name="checkbox-nested-2"
+            id="checkbox-nested-2"
+          />
+        </label>
+        <label for="checkbox-nested-3"
+          >1 Queen
+          <input
+            type="checkbox"
+            name="checkbox-nested-3"
+            id="checkbox-nested-3"
+          />
+        </label>
+        <label for="checkbox-nested-4"
+          >1 King
+          <input
+            type="checkbox"
+            name="checkbox-nested-4"
+            id="checkbox-nested-4"
+          />
+        </label>
+      </fieldset>
+    </div>
+  </body>
+</html>
+//////////////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Controlgroup - Default Functionality</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <style>
+      .ui-controlgroup-vertical {
+        width: 150px;
+      }
+      .ui-controlgroup.ui-controlgroup-vertical > button.ui-button,
+      .ui-controlgroup.ui-controlgroup-vertical > .ui-controlgroup-label {
+        text-align: center;
+      }
+      #car-type-button {
+        width: 120px;
+      }
+      .ui-controlgroup-horizontal .ui-spinner-input {
+        width: 20px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $(".controlgroup").controlgroup();
+        $(".controlgroup-vertical").controlgroup({
+          direction: "vertical",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="widget">
+      <h1>Controlgroup</h1>
+      <fieldset>
+        <legend>Rental Car</legend>
+        <div class="controlgroup">
+          <select id="car-type">
+            <option>Compact car</option>
+            <option>Midsize car</option>
+            <option>Full size car</option>
+            <option>SUV</option>
+            <option>Luxury</option>
+            <option>Truck</option>
+            <option>Van</option>
+          </select>
+          <label for="transmission-standard">Standard</label>
+          <input type="radio" name="transmission" id="transmission-standard" />
+          <label for="transmission-automatic">Automatic</label>
+          <input type="radio" name="transmission" id="transmission-automatic" />
+          <label for="insurance">Insurance</label>
+          <input type="checkbox" name="insurance" id="insurance" />
+          <label for="horizontal-spinner" class="ui-controlgroup-label"
+            ># of cars</label
+          >
+          <input id="horizontal-spinner" class="ui-spinner-input" />
+          <button>Book Now!</button>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Rental Car</legend>
+        <div class="controlgroup-vertical">
+          <select>
+            <option>Compact car</option>
+            <option>Midsize car</option>
+            <option>Full size car</option>
+            <option>SUV</option>
+            <option>Luxury</option>
+            <option>Truck</option>
+            <option>Van</option>
+          </select>
+          <label for="transmission-standard-v">Standard</label>
+          <input
+            type="radio"
+            name="transmission-v"
+            id="transmission-standard-v"
+          />
+          <label for="transmission-automatic-v">Automatic</label>
+          <input
+            type="radio"
+            name="transmission-v"
+            id="transmission-automatic-v"
+          />
+          <label for="insurance-v">Insurance</label>
+          <input type="checkbox" name="insurance" id="insurance-v" />
+          <label for="vertical-spinner" class="ui-controlgroup-label"
+            ># of cars</label
+          >
+          <input id="vertical-spinner" class="ui-spinner-input" />
+          <button id="book">Book Now!</button>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
+
+
+////////////
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
+//////////
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+ 
+ 
+</body>
+</html>
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Button - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).on( "click", function( event ) {
+      event.preventDefault();
+    } );
+  } );
+  </script>
+</head>
+<body>
+<div class="widget">
+  <h1>Widget Buttons</h1>
+  <button>A button element</button>
+ 
+  <input type="submit" value="A submit button">
+ 
+  <a href="#">An anchor</a>
+</div>
+<h1>CSS Buttons</h1>
+<button class="ui-button ui-widget ui-corner-all">A button element</button>
+ 
+<input class="ui-button ui-widget ui-corner-all" type="submit" value="A submit button">
+ 
+<a class="ui-button ui-widget ui-corner-all" href="#">An anchor</a>
+ 
+ 
+</body>
+</html>
+////////
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+ 
+</head>
+<body>
+  <div class="date">
+<p style="height: 300px , width: 300px ,border: 2px solid black,background-color: aqua,</style>">Date:<input type="text" id="datepicker"></p>
+</div>
+</body>
+</html>

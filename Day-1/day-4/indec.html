@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Flag</title>
+<style>
+  .indian-flag {
+    width: 300px;
+    height: 200px;
+    background-color: #FF9933;
+    position: relative;
+  }
+
+  .stripe {
+    height: 33.33%;
+    width: 100%;
+  }
+
+  .green-stripe {
+    background-color: #138808;
+  }
+
+  .white-stripe {
+    background-color: #FFFFFF;
+  }
+
+  .ashoka-chakra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #000080;
+    background-color: #000080;
+  }
+
+  .wheel {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(0 30%, 100% 30%, 100% 70%, 0 70%);
+    animation: rotate 20s linear infinite;
+  }
+
+  .spoke {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 30%;
+    background-color: #FFFFFF;
+    transform-origin: bottom;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="indian-flag">
+  <div class="stripe organ -stripe"></div>
+  <div class="stripe white-stripe"></div>
+  <div class="stripe green-stripe"></div>
+  <div class="ashoka-chakra">
+    <div class="wheel">
+      <div class="spoke" style="transform: rotate(0deg);"></div>
+      <div class="spoke" style="transform: rotate(30deg);"></div>
+      <div class="spoke" style="transform: rotate(60deg);"></div>
+      <div class="spoke" style="transform: rotate(90deg);"></div>
+      <div class="spoke" style="transform: rotate(120deg);"></div>
+      <div class="spoke" style="transform: rotate(150deg);"></div>
+      <div class="spoke" style="transform: rotate(180deg);"></div>
+      <div class="spoke" style="transform: rotate(210deg);"></div>
+      <div class="spoke" style="transform: rotate(240deg);"></div>
+      <div class="spoke" style="transform: rotate(270deg);"></div>
+      <div class="spoke" style="transform: rotate(300deg);"></div>
+      <div class="spoke" style="transform: rotate(330deg);"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
